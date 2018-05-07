@@ -1,0 +1,163 @@
+/* General */
+body{
+  background-color: #EDEDEF;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.container-fluid{
+  max-width: 1200px;;
+}
+/* Header */
+img {
+  height: 300px;
+}
+.main-photo{
+  padding: 0;
+}
+.main-photo div{
+  position: absolute;
+  top:200px;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(88, 93, 95,0.4);
+}
+.row-header{
+  height: 200px;
+}
+
+.row-header .col div{
+  padding-left: 10px;
+  position: relative;
+  top: 150px;
+  font-size: 1.3em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 2px;
+}
+.row-name{
+  height: 100px;
+}
+.row-name .col{
+  background-color:rgba(88, 93, 95, 0.4); 
+}
+.row-name .col p{
+  padding-left: 10px;
+}
+
+.social{
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1em;
+  position: relative;
+  top: 70px;
+}
+
+.social:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.social span{
+  font-size: 22px;
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+.social-list{
+  text-align: right;
+  padding-right: 40px;
+}
+
+.fa-skype, .fa-facebook-square{
+  padding-right: 2px;
+}
+
+.text-name{
+  margin:0;
+  font-size: 2.6em;
+  font-weight: bold;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 2px;
+}
+.text-title{
+  margin:0;
+  color: #EAEDF0;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+/* Main  */
+main{
+  margin-top: 40px;
+}
+.bottom-breaker{
+  border-top: 1px solid black;
+}
+.timeline li div{
+  padding-top:30px; 
+}
+.timeline-header{
+  font-size: 1.3em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 2px; 
+  margin: 0 0 0 100px; 
+}
+h4{
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+.timestamp::before{
+  content: "\2605";
+  color:#585d5f;
+  padding-right: 10px;
+}
+.timestamp{
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 270px;
+}
+.info p{
+  margin: 1px 0 1px 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.info p::before{
+  content: "\2690";
+  color: #585d5f;
+  padding-right: 5px;
+}
+.addition-info{
+  padding-left: 40px;
+}
+.addition-info-header{
+  font-size: 1.3em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 2px; 
+}
+.addition-info p {
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 10px;
+}
+.addition-info-initial p {
+  padding-top: 30px;
+}
+/* Footer */
+footer a{
+  display: inline-block;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  padding-right: 5px;
+
+}
+footer{
+  text-align: center;
+  border-top: 1px solid #585d5f; 
+}
