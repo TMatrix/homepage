@@ -8,7 +8,7 @@ body{
   padding: 0;
 }
 
-div, p {
+div, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -116,13 +116,35 @@ h1,h2,h3,h4{
   padding-top: 0.5rem;
 }
 /* Main  */
-main{
-  margin-top: 40px;
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .bottom-breaker{
   border-top: 1px solid black;
 }
-.timeline li div{
+
+.timeline-container {
+  max-width: calc(100% - 100% / 3);
+  padding: 1.5rem 0;
+}
+
+.timeline-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+
+.timeline-col {
+  padding: 0 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.timeline-list li div{
   padding-top:30px; 
 }
 .timeline-header{
@@ -142,7 +164,7 @@ h4{
   padding-right: 10px;
 }
 .timestamp{
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
   max-width: 270px;
@@ -157,7 +179,9 @@ h4{
   padding-right: 5px;
 }
 .addition-info{
-  padding-left: 40px;
+  max-width: calc(100% / 3);
+  line-height: 1.5rem;
+  padding: 1.5rem 0; 
 }
 .addition-info-header{
   font-size: 1.3em;
@@ -166,7 +190,7 @@ h4{
 }
 .addition-info p {
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 10px;
+  padding-bottom: 0.8rem;
 }
 .addition-info-initial p {
   padding-top: 30px;
@@ -189,11 +213,26 @@ footer{
   border-top: 1px solid #585d5f; 
 }
 
-@media (max-width: 803px) {
+@media (max-width: 825px) {
+  /* Header */
   .header-content-photo {
     margin: 0 auto;
   }
   .header-content-photo div{
     display: none;
   }
+
+  /* Main */
+  /* .bottom-breaker {
+    display: none;
+  } */
+  .timeline-container {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  .addition-info {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
 }
